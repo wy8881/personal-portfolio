@@ -9,7 +9,7 @@ export const FerrisWheel = () => {
         "react-js.svg"
     ]
     return(
-        <div className={"ferris-wheel-box"}>
+        <div>
             {ferriesOfSelf.map((intro, index:number) => {
                 return (
                         <motion.div
@@ -32,7 +32,8 @@ export const FerrisWheel = () => {
                                     transition: {
                                         repeat: Infinity,
                                         duration: ferriesOfSelf.length*5,
-                                        delay:index*5
+                                        delay:index*5,
+                                        ease: "linear"
                                     }
                                 },
                             }}

@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import {NavBar} from "./components/NavBar";
 import {Banner} from "./components/Banner";
-import {FerrisWheel} from "./components/FerrisWheel"
 import {Skills} from "./components/Skills";
 
 function App() {
@@ -10,6 +9,7 @@ function App() {
     <div className="App">
         <NavBar />
         <Banner />
+        <Skills />
     </div>
   );
 }

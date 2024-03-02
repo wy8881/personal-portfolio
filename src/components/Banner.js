@@ -47,10 +47,10 @@ export const Banner = () => {
     return (
         <section className={"banner"} id={"home"} >
                 <Row className={"align-top"}>
-                    <Col xs={12} md={10} xl={9} className={"align-content-center"} style={{paddingLeft: 50}}>
+                    <Col xs={12} md={10} xl={6} className={"align-content-center"} style={{paddingLeft: 50}}>
                         <motion.h1
                             initial={{x: -300}}
-                            animate={{x: 0}}
+                            animate={{x: -100}}
                             transition={{
                                 duration: 2,
                                 delay: 0.2
@@ -61,7 +61,7 @@ export const Banner = () => {
                         </motion.h1>
                         <motion.h1
                             initial={{x: -300}}
-                            animate={{x: 0}}
+                            animate={{x: -100}}
                             transition={{
                                 duration: 2,
                                 delay: 0.2
@@ -70,9 +70,9 @@ export const Banner = () => {
                         >
                             Welcome to my Portfolio
                         </motion.h1>
-                        <h1>I am {text}</h1>
+                        <h1 style={{position:"relative",top:"2em"}}>I am {text}</h1>
                     </Col>
-                    <Col xs={0} md={2} xl={3}>
+                    <Col xs={0} md={2} xl={6} >
                         <FerrisWheel/>
                     </Col>
                 </Row>

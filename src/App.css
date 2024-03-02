@@ -126,12 +126,20 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 }
 
+.banner {
+  padding: 260px 0 100px 0;
+  background-image: url("./assets/img/banner_backgroud.jpg");
+  background-position: top center;
+
+}
+
 
 .ferris-wheel-intro {
-  top: 0;
-  height: 60%;
-  width: 50%;
-  position: fixed;
+  top: 15%;
+  left: 70%;
+  height: 30%;
+  width: 30%;
+  position: absolute;
   overflow: hidden;
   rotate: -90deg;
 }
