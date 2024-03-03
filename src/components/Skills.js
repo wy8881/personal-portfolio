@@ -1,15 +1,19 @@
-import Carousel from 'react-multi-carousel';
+import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import {Col, Container, Row} from "react-bootstrap";
+import javaIcon from "../assets/img/tech_icon/java.svg";
+import jupyterIcon from "../assets/img/tech_icon/jupyter.svg";
+import mongodbIcon from "../assets/img/tech_icon/mongodb.svg";
+import pythonIcon from "../assets/img/tech_icon/python.svg";
+import reactIcon from "../assets/img/tech_icon/react-js.svg";
+import junitIcon from "../assets/img/tech_icon/junit5.png";
+import mysqlIcon from "../assets/img/tech_icon/mysql.svg";
+import springBootIcon from "../assets/img/tech_icon/springboot.svg";
+import intellijIcon from "../assets/img/tech_icon/intelliJ.svg";
+import {ShakeLittle} from "reshake";
+
 export const Skills = () =>{
 
-    const tech_icons = [
-        "java.svg",
-        "jupyter.svg",
-        "mongodb.svg",
-        "python.svg",
-        "react-js.svg"
-    ]
 
     const responsive = {
         superLargeDesktop: {
@@ -38,35 +42,44 @@ export const Skills = () =>{
                     <Col>
                         <div className="skill-box">
                             <h2>Skills</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aspernatur assumenda aut consequuntur culpa deleniti dolorem dolorum explicabo magnam minus molestias, odit porro recusandae, sed sequi sint, temporibus velit?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi architecto, dolor doloremque est officia rem temporibus. Consequuntur dignissimos dolorum facere magnam molestias neque possimus repellendus rerum! Harum, officiis.</p>
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
-                                {tech_icons.map((icon, index) => {
-                                    return (
-                                        <div className="item" key={index}>
-                                            <img src={require(`../assets/img/tech_icon/${icon}`)} alt="Image"/>
-                                            <h5>Web Development</h5>
-                                        </div>
-                                    )
-                                })}
-                                <div className="item">
-                                    <img src="" alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src="" alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src="" alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div><div className="item">
-                                    <img src="" alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src="" alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
+                                <Container className="item">
+                                    <Row>
+                                        <Col><ShakeLittle><img src={reactIcon} alt="react" className={"skill_image"}/></ShakeLittle></Col>
+                                    </Row>
+                                    <Row><h5>Front End</h5></Row>
+                                </Container>
+                                <Container className="item">
+                                    <Row >
+                                        <Col><ShakeLittle><img src={javaIcon} alt="java" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={pythonIcon} alt="python" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={springBootIcon} alt="spring boot" className={"skill_image"}/></ShakeLittle></Col>
+                                    </Row>
+                                    <Row><h5>Back End</h5></Row>
+                                </Container>
+                                <Container className="item">
+                                    <Row>
+                                        <Col><ShakeLittle><img src={junitIcon} alt="junit5"
+                                                               className={"skill_image"}/></ShakeLittle></Col>
+                                    </Row>
+                                    <Row><h5>Test</h5></Row>
+                                </Container>
+                                <Container className="item">
+                                    <Row>
+                                        <Col><ShakeLittle><img src={intellijIcon} alt="intellij" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={jupyterIcon} alt="jupyter" className={"skill_image"}/></ShakeLittle></Col>
+                                    </Row>
+                                    <Row><h5>Development Platform</h5></Row>
+                                </Container>
+                                <Container className="item">
+                                    <Row>
+                                        <Col><ShakeLittle><img src={mongodbIcon} alt="mongodb" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={mysqlIcon} alt="mysql" className={"skill_image"}/></ShakeLittle></Col>
+                                    </Row>
+                                    <Row><h5>Database</h5></Row>
+
+                                </Container>
                             </Carousel>
                         </div>
                     </Col>

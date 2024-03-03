@@ -7,7 +7,7 @@ import {useEffect, useState} from "react";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['a Adelaide Uni Student','creative' ,'energetic', 'passionate']
+    const toRotate = ['Adelaide Uni Student','creative' ,'energetic', 'passionate']
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(5);
     const period = 2000;
@@ -49,7 +49,7 @@ export const Banner = () => {
                 <Row className={"align-top"}>
                     <Col xs={12} md={10} xl={6} className={"align-content-center"} style={{paddingLeft: 50}}>
                         <motion.h1
-                            initial={{x: -300}}
+                            initial={{x: -300,y:-80}}
                             animate={{x: -100}}
                             transition={{
                                 duration: 2,
@@ -60,7 +60,7 @@ export const Banner = () => {
                             Hi I'm Yi
                         </motion.h1>
                         <motion.h1
-                            initial={{x: -300}}
+                            initial={{x: -300, y:-80}}
                             animate={{x: -100}}
                             transition={{
                                 duration: 2,
@@ -70,7 +70,7 @@ export const Banner = () => {
                         >
                             Welcome to my Portfolio
                         </motion.h1>
-                        <h1 style={{position:"relative",top:"2em"}}>I am {text}</h1>
+                        <h1 style={{position:"relative",top:-80, right:"3em"}}>I am {text}</h1>
                     </Col>
                     <Col xs={0} md={2} xl={6} >
                         <FerrisWheel/>

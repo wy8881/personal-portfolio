@@ -5,6 +5,7 @@ import linkedinIcon from '../assets/img/linkedin_icon.svg'
 import emailIcon from '../assets/img/email_icon.svg'
 import githubIcon from '../assets/img/github_icon.svg'
 import logoIcon from '../assets/img/logo.svg'
+import ticketIcon from '../assets/img/tickets_icon.svg'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -30,9 +31,9 @@ export const NavBar = () => {
 
     return (
         <Navbar expand="lg" className={scrolled? "scrolled": ""}>
-            <Container>
+            <Container className={"navbar-context"}>
                 <Navbar.Brand href="#home">
-                    <img src={logoIcon} alt={"logo"} className={"navbar-icon"}/>
+                    <img src={ticketIcon} alt={"logo"} className={"navbar-icon"}/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className={"navbar-toggler-icon"}></span>
