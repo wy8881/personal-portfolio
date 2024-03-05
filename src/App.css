@@ -103,6 +103,7 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 }
 
+
 .social-icon a:hover img {
   /*filter: brightness(0) saturate(100%) invert(50%) sepia(7%) saturate(98%) hue-rotate(346deg);*/
   scale: 1.2;
@@ -118,22 +119,11 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   to {transform: translateY(-20px);}
 }
 
-.navbar-text button {
-  font-weight: 700;
-  color: black;
-  border: transparent;
-  padding: 18px 34px;
-  font-size: 18px;
-  background-color: transparent;
-  margin-left: 18px;
-  position: relative;
-  transition: 0.3s ease-in-out;
+.contact-btn{
+  margin-left: 50px;
+  width: 180px;
 }
 
-.navbar-text button:hover {
-  color: Maroon;
-
-}
 /*Banner CSS*/
 .banner {
   padding: 260px 0 100px 0;
@@ -151,19 +141,19 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 }
 
 .ferris-wheel-intro {
-  top: 10%;
-  left: 60%;
-  height: 40%;
-  width: 40%;
-  position: absolute;
+  top: 25%;
+  left: 90%;
+  height: 30%;
+  width: 20%;
+  position: fixed;
   overflow: hidden;
-  rotate: -90deg;
+  rotate: 90deg;
 }
 
 .intro-img {
   height: 100px;
   width: 100px;
-  rotate: 90deg;
+  /*rotate: 90deg;*/
 }
 
 .tech_icon {
@@ -175,7 +165,8 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 /*Skills CSS*/
 .skills{
-    background-color: transparent;
+  background-color: transparent;
+  padding: 10em 0 100px 0;
 
 }
 
@@ -185,19 +176,28 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
     margin: 20px;
 }
 
-.skill_slider {
-  display: inline-block;
-}
-.item {
+.skills-slide {
   background-color: rosybrown;
   border-radius: 100px;
 
 }
-.item h5{
+
+.skills-slide h5{
   color: white;
   margin-bottom: 20px;
 }
 
+/*projects css*/
+.projects {
+  padding: 10em 0;
+}
+
+.proj-imgbox {
+  border-radius: 40px;
+  background-color: #e5989b;
+  padding: 2rem 0;
+  border: 10px solid mistyrose;
+}
 
 
 

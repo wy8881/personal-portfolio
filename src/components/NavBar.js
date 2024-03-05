@@ -1,11 +1,11 @@
-import {useState, useEffect} from "react";
+import {useState, useEffect, useRef} from "react";
 import {Navbar, Container, Nav} from "react-bootstrap"
 import insIcon from '../assets/img/ins_icon.svg'
 import linkedinIcon from '../assets/img/linkedin_icon.svg'
 import emailIcon from '../assets/img/email_icon.svg'
 import githubIcon from '../assets/img/github_icon.svg'
-import logoIcon from '../assets/img/logo.svg'
 import ticketIcon from '../assets/img/tickets_icon.svg'
+import {motion} from "framer-motion";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -29,6 +29,57 @@ export const NavBar = () => {
         setActiveLink(value);
     }
 
+    const SpotlightButton = () => {
+        const btnRef = useRef(null);
+        const spanRef = useRef(null);
+
+        useEffect(() => {
+
+            const span = spanRef.current;
+            const btn = btnRef.current;
+            const handleMouseMove = (e) => {
+                const { width } = e.target.getBoundingClientRect();
+                const offset = e.offsetX;
+                const left = `${(offset / width) * 100}%`;
+
+
+                span.animate({ left }, { duration: 250, fill: "forwards" });
+            };
+
+            const handleMouseLeave = () => {
+                span.animate(
+                    { left: "50%" },
+                    { duration: 100, fill: "forwards" }
+                );
+            };
+
+            btn.addEventListener("mousemove", handleMouseMove);
+            btn.addEventListener("mouseleave", handleMouseLeave);
+
+            return () => {
+                btn.removeEventListener("mousemove", handleMouseMove);
+                btn.removeEventListener("mouseleave", handleMouseLeave);
+            };
+        }, []);
+
+        return (
+            <motion.button
+                whileTap={{ scale: 0.985 }}
+                ref={btnRef}
+                className="relative w-full max-w-xs overflow-hidden rounded-full bg-black px-4 py-3 text-lg font-medium text-white"
+            >
+      <span className="pointer-events-none relative z-10 mix-blend-difference">
+        Contact Me
+      </span>
+                <span
+                    ref={spanRef}
+                    className="pointer-events-none absolute left-[50%] top-[50%] h-32 w-32 -translate-x-[50%] -translate-y-[50%] rounded-full bg-slate-100"
+                />
+            </motion.button>
+        );
+    };
+
+
     return (
         <Navbar expand="lg" className={scrolled? "scrolled": ""}>
             <Container className={"navbar-context"}>
@@ -46,14 +97,14 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className={"social-icon"}>
-                            <a href="#"><img src={githubIcon} alt=""/></a>
+                            <a href="https://github.com/wy8881"><img src={githubIcon} alt=""/></a>
                             <a href="#"><img src={emailIcon} alt=""/></a>
                             <a href="#"><img src={insIcon} alt=""/></a>
                             <a href="#"><img src={linkedinIcon} alt=""/></a>
                         </div>
-                        {/*<div>*/}
-                            <button className={"vvd"} onClick={() => console.log("connect")}>Let's connect</button>
-                        {/*</div>*/}
+                        <div className={"contact-btn"}>
+                            <SpotlightButton />
+                        </div>
 
                     </span>
                 </Navbar.Collapse>

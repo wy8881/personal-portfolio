@@ -6,7 +6,10 @@ export const FerrisWheel = () => {
         "jupyter.svg",
         "mongodb.svg",
         "python.svg",
-        "react-js.svg"
+        "react-js.svg",
+        "springboot.svg",
+        "junit5.png",
+        "intelliJ.svg"
     ]
     return(
         <div>

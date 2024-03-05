@@ -36,21 +36,22 @@ export const Skills = () =>{
     };
 
     return (
-        <section className="skills" id={"skills"} style={{paddingTop:"10em"}}>
+        <section className="skills" id={"skills"}>
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-box">
+                        <Col className="skill-box">
                             <h2>Skills</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi architecto, dolor doloremque est officia rem temporibus. Consequuntur dignissimos dolorum facere magnam molestias neque possimus repellendus rerum! Harum, officiis.</p>
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
-                                <Container className="item">
-                                    <Row>
-                                        <Col><ShakeLittle><img src={reactIcon} alt="react" className={"skill_image"}/></ShakeLittle></Col>
-                                    </Row>
+                                <Container className="skills-slide">
+                                    <div className="row justify-content-center">
+                                        <Col style={{paddingLeft:"10em"}}><ShakeLittle><img src={reactIcon} alt="react"
+                                                                                            className={"skill_image"}/></ShakeLittle></Col>
+                                    </div>
                                     <Row><h5>Front End</h5></Row>
                                 </Container>
-                                <Container className="item">
+                                <Container className="skills-slide">
                                     <Row >
                                         <Col><ShakeLittle><img src={javaIcon} alt="java" className={"skill_image"}/></ShakeLittle></Col>
                                         <Col><ShakeLittle><img src={pythonIcon} alt="python" className={"skill_image"}/></ShakeLittle></Col>
@@ -58,21 +59,21 @@ export const Skills = () =>{
                                     </Row>
                                     <Row><h5>Back End</h5></Row>
                                 </Container>
-                                <Container className="item">
+                                <Container className="skills-slide">
                                     <Row>
-                                        <Col><ShakeLittle><img src={junitIcon} alt="junit5"
+                                        <Col style={{paddingLeft:"10em"}}><ShakeLittle><img src={junitIcon} alt="junit5"
                                                                className={"skill_image"}/></ShakeLittle></Col>
                                     </Row>
                                     <Row><h5>Test</h5></Row>
                                 </Container>
-                                <Container className="item">
+                                <Container className="skills-slide">
                                     <Row>
                                         <Col><ShakeLittle><img src={intellijIcon} alt="intellij" className={"skill_image"}/></ShakeLittle></Col>
                                         <Col><ShakeLittle><img src={jupyterIcon} alt="jupyter" className={"skill_image"}/></ShakeLittle></Col>
                                     </Row>
                                     <Row><h5>Development Platform</h5></Row>
                                 </Container>
-                                <Container className="item">
+                                <Container className="skills-slide">
                                     <Row>
                                         <Col><ShakeLittle><img src={mongodbIcon} alt="mongodb" className={"skill_image"}/></ShakeLittle></Col>
                                         <Col><ShakeLittle><img src={mysqlIcon} alt="mysql" className={"skill_image"}/></ShakeLittle></Col>
@@ -81,7 +82,7 @@ export const Skills = () =>{
 
                                 </Container>
                             </Carousel>
-                        </div>
+                        </Col>
                     </Col>
                 </Row>
             </Container>
