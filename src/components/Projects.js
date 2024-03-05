@@ -34,20 +34,20 @@ export const Projects = () => {
                 </Row>
                 <Tab.Container id="project-tabs" defaultActiveKey="first">
                     <Row>
-                        <Col sm={3}>
-                            <Nav variant="pills" className="flex-row">
-                                <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Col sm={12}>
+                            <Nav variant="pills" className="justify-content-center">
+                                <Nav.Item className={"tab"}>
+                                    <Nav.Link eventKey="first" >Tab 1</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                <Nav.Item className={"tab"}>
+                                    <Nav.Link eventKey="second" >Tab 2</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Col>
 
                     </Row>
                     <Row>
-                        <Col sm={9}>
+                        <Col sm={12}>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>

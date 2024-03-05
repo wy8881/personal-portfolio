@@ -98,12 +98,13 @@ export const NavBar = () => {
                     <span className="navbar-text">
                         <div className={"social-icon"}>
                             <a href="https://github.com/wy8881"><img src={githubIcon} alt=""/></a>
-                            <a href="#"><img src={emailIcon} alt=""/></a>
                             <a href="#"><img src={insIcon} alt=""/></a>
                             <a href="#"><img src={linkedinIcon} alt=""/></a>
                         </div>
                         <div className={"contact-btn"}>
-                            <SpotlightButton />
+                            <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('connect')}>
+                                <SpotlightButton />
+                            </Nav.Link>
                         </div>
 
                     </span>
