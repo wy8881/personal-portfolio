@@ -205,7 +205,22 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 .tab {
   width: 100px;
 }
+/*contact me css*/
+.contact h2{
+  color: #bc4749;
+}
 
+.contact input, textarea {
+  border-radius: 10px;
+}
+
+.contactForm {
+  padding: 50px;
+  border: 1px solid #e5989b;
+  border-radius: 50px;
+  background-color: #f6bd60;
+
+}
 
 .App {
   text-align: center;
