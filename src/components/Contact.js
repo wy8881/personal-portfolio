@@ -1,8 +1,9 @@
 import {useState} from "react";
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import connectBackground from "../assets/img/connect_background.svg";
 import emailjs from '@emailjs/browser';
 import { FiSend } from "react-icons/fi";
+import key from "../config/apiKey.json";
 
 export const Contact = () => {
     const formInitialDetails = {
@@ -12,8 +13,9 @@ export const Contact = () => {
         message: ""
     }
 
+
     emailjs.init({
-        publicKey:'c1UGFrzZKiu7VWacg'
+        publicKey: key.PUBLIC_KEY
     })
 
     const [formDetails, setFormDetails] = useState(formInitialDetails);
@@ -27,12 +29,12 @@ export const Contact = () => {
     const handleSubmit = () => {
         setBtnText("Sending...");
         emailjs.send('personal_portfolio', 'template_c5ka45w', formDetails)
-            .then((result) => {
+            .then(() => {
                 setFormDetails(formInitialDetails);
                 console.log(formDetails)
                 setBtnText("Send");
                 setStatus("success");
-            }, (error) => {
+            }, () => {
                 setBtnText("Failed");
                 setStatus("failed");
             });
