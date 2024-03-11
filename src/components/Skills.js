@@ -71,8 +71,7 @@ export const Skills = () =>{
                                 </Container>
                                 <Container className="skills-slide">
                                     <Row>
-                                        <Col style={{paddingLeft:"10em"}}><ShakeLittle><img src={junitIcon} alt="junit5"
-                                                               className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col style={{paddingLeft:"10em"}}><ShakeLittle><img src={junitIcon} alt="junit5" className={"skill_image"}/></ShakeLittle></Col>
                                     </Row>
                                     <Row><h5>Test</h5></Row>
                                 </Container>
