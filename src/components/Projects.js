@@ -36,10 +36,10 @@ export const Projects = () => {
                     <Row>
                         <Col sm={12}>
                             <Nav variant="pills" className="justify-content-center">
-                                <Nav.Item className={"tab"}>
+                                <Nav.Item className={"tab-box"}>
                                     <Nav.Link eventKey="first" >Tab 1</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item className={"tab"}>
+                                <Nav.Item className={"tab-box"}>
                                     <Nav.Link eventKey="second" >Tab 2</Nav.Link>
                                 </Nav.Item>
                             </Nav>

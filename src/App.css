@@ -1,3 +1,9 @@
+/**{*/
+/*  cursor: none;*/
+/*}*/
+
+
+
 /*Custom Fonts*/
 @font-face {
   font-family: Centra;
@@ -141,10 +147,10 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 }
 
 .ferris-wheel-intro {
-  top: 25%;
-  left: 90%;
-  height: 30%;
-  width: 20%;
+  top: 40%;
+  left: 80%;
+  height: 40%;
+  width: 40%;
   position: fixed;
   overflow: hidden;
   rotate: 90deg;
@@ -190,21 +196,30 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 /*projects css*/
 .project{
+  position: relative;
   padding: 100px 0 100px 0;;
 }
 
 .proj-imgbox {
-  position: relative;
   border-radius: 40px;
-  background-color: #e5989b;
+  background-color: #023e8a;
   padding: 2rem 0;
   border: 10px solid mistyrose;
   z-index: 10;
 }
 
-.tab {
+.proj-tx h4, .proj-tx span {
+  color: #e9edc9;
+}
+
+.proj-tx a {
+  color: #e9edc9;
+}
+
+.tab-box {
   width: 100px;
 }
+
 /*contact me css*/
 .contact h2{
   color: #bc4749;
@@ -215,11 +230,23 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 }
 
 .contactForm {
+  position: relative;
+  z-index: 2;
   padding: 50px;
   border: 1px solid #e5989b;
   border-radius: 50px;
   background-color: #f6bd60;
-
+}
+/*Cursor*/
+.circle {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .App {

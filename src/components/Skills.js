@@ -10,6 +10,8 @@ import junitIcon from "../assets/img/tech_icon/junit5.png";
 import mysqlIcon from "../assets/img/tech_icon/mysql.svg";
 import springBootIcon from "../assets/img/tech_icon/springboot.svg";
 import intellijIcon from "../assets/img/tech_icon/intelliJ.svg";
+import typeScriptIcon from "../assets/img/tech_icon/typescript.svg";
+import angularIcon from "../assets/img/tech_icon/angular.svg";
 import {ShakeLittle} from "reshake";
 
 export const Skills = () =>{
@@ -46,8 +48,16 @@ export const Skills = () =>{
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
                                 <Container className="skills-slide">
                                     <div className="row justify-content-center">
-                                        <Col style={{paddingLeft:"10em"}}><ShakeLittle><img src={reactIcon} alt="react"
-                                                                                            className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={javaIcon} alt="java" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={pythonIcon} alt="python" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={typeScriptIcon} alt="typescript" className={"skill_image"}/></ShakeLittle></Col>
+                                    </div>
+                                    <Row><h5>Language</h5></Row>
+                                </Container>
+                                <Container className="skills-slide">
+                                    <div className="row justify-content-center">
+                                        <Col><ShakeLittle><img src={reactIcon} alt="react" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col><ShakeLittle><img src={angularIcon} alt="angular" className={"skill_image"}/></ShakeLittle></Col>
                                     </div>
                                     <Row><h5>Front End</h5></Row>
                                 </Container>

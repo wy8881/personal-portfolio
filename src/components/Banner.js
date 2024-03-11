@@ -1,8 +1,8 @@
 import {Col, Container, Row} from "react-bootstrap";
-import {ArrowRightCircle} from "react-bootstrap-icons";
 import {motion} from "framer-motion";
 import {FerrisWheel} from "./FerrisWheel";
 import {useEffect, useState} from "react";
+import {Cursor} from "./Cursor";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
