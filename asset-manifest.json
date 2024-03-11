@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.a23d838e.css",
-    "main.js": "/personal-portfolio/static/js/main.b05afa03.js",
+    "main.css": "/personal-portfolio/static/css/main.10309f27.css",
+    "main.js": "/personal-portfolio/static/js/main.1b69f9a2.js",
     "static/js/453.298f5782.chunk.js": "/personal-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner_background.svg": "/personal-portfolio/static/media/banner_background.da15df77ff25ce702d92.svg",
     "static/media/CentraNo2-Bold.ttf": "/personal-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -25,14 +25,16 @@
     "static/media/linkedin_icon.svg": "/personal-portfolio/static/media/linkedin_icon.1dd51a07bd7327708e5249c5f9025b97.svg",
     "index.html": "/personal-portfolio/index.html",
     "static/media/springboot.svg": "/personal-portfolio/static/media/springboot.06648761f888d95c060a68377ffd04e8.svg",
+    "static/media/angular.svg": "/personal-portfolio/static/media/angular.8e1597b4092220dfc8a1b427ea95ecf6.svg",
     "static/media/ins_icon.svg": "/personal-portfolio/static/media/ins_icon.53e88ec897534f2befd465a2477ec8e7.svg",
+    "static/media/typescript.svg": "/personal-portfolio/static/media/typescript.3c3e66ed2768391469c8b74c302a6e5c.svg",
     "static/media/email_icon.svg": "/personal-portfolio/static/media/email_icon.0e0b609b58cdcdfd255c4410a5eb7df5.svg",
-    "main.a23d838e.css.map": "/personal-portfolio/static/css/main.a23d838e.css.map",
-    "main.b05afa03.js.map": "/personal-portfolio/static/js/main.b05afa03.js.map",
+    "main.10309f27.css.map": "/personal-portfolio/static/css/main.10309f27.css.map",
+    "main.1b69f9a2.js.map": "/personal-portfolio/static/js/main.1b69f9a2.js.map",
     "453.298f5782.chunk.js.map": "/personal-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a23d838e.css",
-    "static/js/main.b05afa03.js"
+    "static/css/main.10309f27.css",
+    "static/js/main.1b69f9a2.js"
   ]
 }
