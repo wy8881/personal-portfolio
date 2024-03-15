@@ -2,8 +2,6 @@
 /*  cursor: none;*/
 /*}*/
 
-
-
 /*Custom Fonts*/
 @font-face {
   font-family: Centra;
@@ -133,18 +131,29 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 /*Banner CSS*/
 .banner {
   padding: 260px 0 100px 0;
+  /*max-width: 100%;*/
+  /*max-height: 30%;*/
+  /*width: auto;*/
+  /*height: auto;*/
   background-image: url("./assets/img/banner_background.svg");
-  background-position: top center;
+  background-position:top center;
   background-size: cover;
 
+
 }
 
-，banner h1{
-    font-size: 60px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 20px;
+.motion-box{
+  max-width: 50%;
+
+
 }
+
+/*，banner h1{*/
+/*    font-size: 60px;*/
+/*    font-weight: 700;*/
+/*    color: #fff;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
 .ferris-wheel-intro {
   top: 40%;

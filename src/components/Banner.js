@@ -46,33 +46,34 @@ export const Banner = () => {
 
     return (
         <section className={"banner"} id={"home"} >
-                <Row className={"align-top"}>
-                    <Col xs={12} md={10} xl={6} className={"align-content-center"} style={{paddingLeft: 50}}>
-                        <motion.h1
-                            initial={{x: -300,y:-80}}
-                            animate={{x: -100}}
-                            transition={{
-                                duration: 2,
-                                delay: 0.2
-                            }}
-                            whileHover={{scale: 1.2, opacity: 0.4}}
-                        >
-                            Hi I'm Yi
-                        </motion.h1>
-                        <motion.h1
-                            initial={{x: -300, y:-80}}
-                            animate={{x: -100}}
-                            transition={{
-                                duration: 2,
-                                delay: 0.2
-                            }}
-                            whileHover={{scale: 1.2, opacity: 0.4}}
-                        >
-                            Welcome to my Portfolio
-                        </motion.h1>
-                        <h1 style={{position:"relative",top:-80, right:"3em"}}>I am {text}</h1>
+                <Row className={"justify-content-center"}>
+                    <Col xs={6} md={6} xl={6} style={{maxWidth:"50%"}}>
+                            <motion.h1
+                                initial={{x: -300, y: -80}}
+                                animate={{x: -100}}
+                                transition={{
+                                    duration: 2,
+                                    delay: 0.2
+                                }}
+                                whileHover={{scale: 1.2, opacity: 0.4}}
+                            >
+                                Hi I'm Yi
+                            </motion.h1>
+                            <motion.h1
+                                initial={{x: -300, y: -80}}
+                                animate={{x: -100}}
+                                transition={{
+                                    duration: 2,
+                                    delay: 0.2
+                                }}
+                                whileHover={{scale: 1.2, opacity: 0.4}}
+                            >
+                                Welcome to my Portfolio
+                            </motion.h1>
+                            <h1 style={{position: "relative", top: -80, right: "3em"}}>I am {text}</h1>
+
                     </Col>
-                    <Col xs={0} md={2} xl={6} >
+                    <Col xs={6} md={6} xl={6}>
                         <FerrisWheel/>
                     </Col>
                 </Row>
