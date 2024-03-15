@@ -47,45 +47,78 @@ export const Skills = () =>{
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi architecto, dolor doloremque est officia rem temporibus. Consequuntur dignissimos dolorum facere magnam molestias neque possimus repellendus rerum! Harum, officiis.</p>
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
                                 <Container className="skills-slide">
-                                    <div className="row justify-content-center">
-                                        <Col><ShakeLittle><img src={javaIcon} alt="java" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={pythonIcon} alt="python" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={typeScriptIcon} alt="typescript" className={"skill_image"}/></ShakeLittle></Col>
-                                    </div>
+                                    <Row className={"align-items-center"}>
+                                        <Col>
+                                            <div className="skill-item">
+                                                <img src={javaIcon} alt="java" className={"skill_image"}/></div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item">
+                                                <img src={pythonIcon} alt="python" className={"skill_image"}/></div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item">
+                                                <img src={typeScriptIcon} alt="typescript" className={"skill_image"} style={{maxWidth:"60%"}}/></div>
+                                        </Col>
+                                    </Row>
                                     <Row><h5>Language</h5></Row>
                                 </Container>
                                 <Container className="skills-slide">
-                                    <div className="row justify-content-center">
-                                        <Col><ShakeLittle><img src={reactIcon} alt="react" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={angularIcon} alt="angular" className={"skill_image"}/></ShakeLittle></Col>
-                                    </div>
+                                    <Row>
+                                        <Col>
+                                            <div className="skill-item">
+                                                <img src={reactIcon} alt="react" className={"skill_image"}/>
+                                            </div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item">
+                                                <img src={angularIcon} alt="angular" className={"skill_image"}/>
+                                            </div>
+                                        </Col>
+                                    </Row>
                                     <Row><h5>Front End</h5></Row>
                                 </Container>
                                 <Container className="skills-slide">
                                     <Row >
-                                        <Col><ShakeLittle><img src={javaIcon} alt="java" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={pythonIcon} alt="python" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={springBootIcon} alt="spring boot" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col>
+                                            <div className="skill-item"><img src={javaIcon} alt="java" className={"skill_image"}/></div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item"><img src={springBootIcon} alt="spring boot" className={"skill_image"}/></div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item"><img src={pythonIcon} alt="python" className={"skill_image"}/></div>
+                                        </Col>
                                     </Row>
                                     <Row><h5>Back End</h5></Row>
                                 </Container>
                                 <Container className="skills-slide">
                                     <Row>
-                                        <Col style={{paddingLeft:"10em"}}><ShakeLittle><img src={junitIcon} alt="junit5" className={"skill_image"}/></ShakeLittle></Col>
+                                        <div className="skill-item">
+                                            <img src={junitIcon} alt="junit5" className={"skill_image"}/>
+                                        </div>
                                     </Row>
                                     <Row><h5>Test</h5></Row>
                                 </Container>
                                 <Container className="skills-slide">
                                     <Row>
-                                        <Col><ShakeLittle><img src={intellijIcon} alt="intellij" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={jupyterIcon} alt="jupyter" className={"skill_image"}/></ShakeLittle></Col>
+                                        <Col>
+                                            <div className="skill-item"><img src={intellijIcon} alt="intellij" className={"skill_image"}/></div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item"><img src={jupyterIcon} alt="jupyter" className={"skill_image"}/></div>
+                                        </Col>
                                     </Row>
                                     <Row><h5>Development Platform</h5></Row>
                                 </Container>
                                 <Container className="skills-slide">
-                                    <Row>
-                                        <Col><ShakeLittle><img src={mongodbIcon} alt="mongodb" className={"skill_image"}/></ShakeLittle></Col>
-                                        <Col><ShakeLittle><img src={mysqlIcon} alt="mysql" className={"skill_image"}/></ShakeLittle></Col>
+                                    <Row className={"align-items-center"}>
+                                        <Col>
+                                            <div className="skill-item"><img src={mongodbIcon} alt="mongodb" className={"skill_image"}/></div>
+                                        </Col>
+                                        <Col>
+                                            <div className="skill-item"><img src={mysqlIcon} alt="mysql" className={"skill_image"}/></div>
+                                        </Col>
                                     </Row>
                                     <Row><h5>Database</h5></Row>
 

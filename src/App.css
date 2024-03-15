@@ -131,10 +131,10 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 /*Banner CSS*/
 .banner {
   padding: 260px 0 100px 0;
-  /*max-width: 100%;*/
-  /*max-height: 30%;*/
-  /*width: auto;*/
-  /*height: auto;*/
+    max-width: 100%;
+    max-height: 30%;
+    width: auto;
+    height: auto;
   background-image: url("./assets/img/banner_background.svg");
   background-position:top center;
   background-size: cover;
@@ -167,21 +167,12 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 }
 
 .intro-img {
-  display: block;
   height: auto;
   width: auto;
   max-height: 100px;
   max-width: 100px;
   /*rotate: 90deg;*/
 }
-
-/*.tech_icon {*/
-/*  display: block;*/
-/*  height: auto;*/
-/*  width: auto;*/
-/*  max-width: 100px;*/
-/*  max-height: 100px;*/
-/*}*/
 
 /*Skills CSS*/
 .skills{
@@ -191,12 +182,12 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 }
 
 .skill_image{
-    display: block;
-    height: auto;
-    width: auto;
+    height: fit-content;
+    width: fit-content;
     max-width: 80px;
     max-height: 80px;
     margin: 20px;
+
 }
 
 .skills-slide {
@@ -208,6 +199,12 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 .skills-slide h5{
   color: white;
   margin-bottom: 20px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+
 }
 
 /*projects css*/
