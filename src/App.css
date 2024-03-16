@@ -174,8 +174,7 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 /*Banner CSS*/
 .banner {
   padding: 260px 0 100px 0;
-  max-width: 100%;
-  max-height: 30%;
+  max-height: 20%;
   width: auto;
   height: auto;
   background-image: url("./assets/img/banner_background.svg");
@@ -196,7 +195,7 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   top: 40%;
   left: 80%;
   height: 40%;
-  width: 40%;
+  width: 50%;
   position: fixed;
   overflow: hidden;
   rotate: 90deg;
@@ -208,6 +207,7 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   width: auto;
   max-height: 100px;
   max-width: 100px;
+  opacity: 50%;
   /*rotate: 90deg;*/
 }
 
@@ -215,16 +215,13 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 .skills{
   background-color: transparent;
   padding: 100px 0 100px 0;
-
-}
-
-.skills p{
+  position: relative;
 
 }
 
 .skill_image{
-    height: fit-content;
-    width: fit-content;
+    /*height: fit-content;*/
+    /*width: fit-content;*/
     max-width: 80px;
     max-height: 80px;
     margin: 20px;
@@ -234,6 +231,7 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 .skills-slide {
   background-color: rosybrown;
   border-radius: 100px;
+  margin: 20px;
 
 }
 
@@ -255,16 +253,12 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   padding: 100px 0 100px 0;;
 }
 
-.project p{
-
-}
 
 .proj-imgbox {
   border-radius: 40px;
   background-color: #023e8a;
   padding: 2rem 0;
-  border: 10px solid mistyrose;
-  z-index: 10;
+  margin: 10px;
 }
 
 .proj-tx h4, .proj-tx span {
