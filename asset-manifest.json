@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.00c82fcd.css",
-    "main.js": "/personal-portfolio/static/js/main.ec1b7084.js",
+    "main.css": "/personal-portfolio/static/css/main.6c7ee7ca.css",
+    "main.js": "/personal-portfolio/static/js/main.378a50fd.js",
     "static/js/453.298f5782.chunk.js": "/personal-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner_background.svg": "/personal-portfolio/static/media/banner_background.da15df77ff25ce702d92.svg",
+    "static/media/Truculenta-Regular.ttf": "/personal-portfolio/static/media/Truculenta-Regular.3e5cd8bc4442bc544070.ttf",
     "static/media/CentraNo2-Bold.ttf": "/personal-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/personal-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/personal-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/CraftyGirls-Regular.ttf": "/personal-portfolio/static/media/CraftyGirls-Regular.b50a4ad2763ebb1a2c00.ttf",
+    "static/media/BubblegumSans-Regular.ttf": "/personal-portfolio/static/media/BubblegumSans-Regular.4161a3f44e0184ea37fd.ttf",
     "static/media/junit5.png": "/personal-portfolio/static/media/junit5.a064065d06e7833dd89f.png",
+    "static/media/Graduate-Regular.ttf": "/personal-portfolio/static/media/Graduate-Regular.64e4e90410e2cf37d41c.ttf",
     "static/media/revicons.eot": "/personal-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/personal-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/personal-portfolio/static/media/revicons.e8746a624ed098489406.woff",
@@ -29,12 +33,12 @@
     "static/media/angular.svg": "/personal-portfolio/static/media/angular.8e1597b4092220dfc8a1b427ea95ecf6.svg",
     "static/media/ins_icon.svg": "/personal-portfolio/static/media/ins_icon.53e88ec897534f2befd465a2477ec8e7.svg",
     "static/media/email_icon.svg": "/personal-portfolio/static/media/email_icon.0e0b609b58cdcdfd255c4410a5eb7df5.svg",
-    "main.00c82fcd.css.map": "/personal-portfolio/static/css/main.00c82fcd.css.map",
-    "main.ec1b7084.js.map": "/personal-portfolio/static/js/main.ec1b7084.js.map",
+    "main.6c7ee7ca.css.map": "/personal-portfolio/static/css/main.6c7ee7ca.css.map",
+    "main.378a50fd.js.map": "/personal-portfolio/static/js/main.378a50fd.js.map",
     "453.298f5782.chunk.js.map": "/personal-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c82fcd.css",
-    "static/js/main.ec1b7084.js"
+    "static/css/main.6c7ee7ca.css",
+    "static/js/main.378a50fd.js"
   ]
 }
