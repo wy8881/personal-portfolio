@@ -86,7 +86,7 @@ p {
   font-size:32px;
 }
 
-span, a {
+span{
   font-family: Truculenta, sans-serif !important;
   font-size:20px;
 }
@@ -273,6 +273,8 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 .proj-tx a {
   color: #e9edc9;
+  font-family: Truculenta, sans-serif !important;
+  font-size:20px;
 }
 
 .tab-box {
