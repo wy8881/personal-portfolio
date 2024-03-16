@@ -37,6 +37,12 @@
     font-weight: 400;
 }
 
+@font-face {
+  font-family: Truculenta;
+  src: url("./assets/font/Truculenta-Regular.ttf");
+  font-weight: 400;
+}
+
 /*Default CSS*/
 
 /*Setting all the elements on the top for the default*/
@@ -66,7 +72,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-family: Bubblegum, sans-serif !important;
+  font-family: Truculenta, sans-serif !important;
+  font-size:56px !important;
+}
+
+h4 {
+    font-family: Graduate, sans-serif !important;
+    font-size: 24px;
+}
+
+p {
+  font-family: Truculenta, sans-serif !important;
+  font-size:32px;
+}
+
+span, a {
+  font-family: Truculenta, sans-serif !important;
+  font-size:20px;
 }
 
 /*Navbar CSS*/
@@ -170,14 +192,6 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 
 }
-
-/*，banner h1{*/
-/*    font-size: 60px;*/
-/*    font-weight: 700;*/
-/*    color: #fff;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
 .ferris-wheel-intro {
   top: 40%;
   left: 80%;
@@ -204,6 +218,10 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 }
 
+.skills p{
+
+}
+
 .skill_image{
     height: fit-content;
     width: fit-content;
@@ -220,8 +238,9 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 }
 
 .skills-slide h5{
+  font-family: Truculenta, sans-serif;
   color: white;
-  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .skill-item {
@@ -234,6 +253,10 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 .project{
   position: relative;
   padding: 100px 0 100px 0;;
+}
+
+.project p{
+
 }
 
 .proj-imgbox {
