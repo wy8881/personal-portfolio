@@ -5,6 +5,7 @@ import {Banner} from "./components/Banner";
 import {Skills} from "./components/Skills";
 import {Projects} from "./components/Projects";
 import {Contact} from "./components/Contact";
+import {Footer} from "./components/Footer";
 import {Cursor} from "./components/Cursor";
 import {useEffect} from "react";
 
@@ -20,7 +21,9 @@ function App() {
         <Skills />
         <Projects />
         <Contact/>
+        <Footer/>
         {/*<Cursor />*/}
+
     </div>
   );
 }

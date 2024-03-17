@@ -96,13 +96,13 @@ export const NavBar = () => {
                         <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
-                        <div className={"social-icon"}>
-                            <a href="https://github.com/wy8881"><img src={githubIcon} alt="githubIcon"/></a>
+                        <div className={"social-icons"}>
+                            <a href="https://github.com/wy8881"><img src={githubIcon} alt="githubIcon" style={{padding:"5px"}}/></a>
                             <a href="#" style={{display:"none"}}><img src={insIcon} alt=""/></a>
-                            <a href="https://www.linkedin.com/in/yi-wang-meow99"><img src={linkedinIcon} alt="linkedinIcon"/></a>
+                            <a href="https://www.linkedin.com/in/yi-wang-meow99"><img src={linkedinIcon} alt="linkedinIcon" /></a>
                         </div>
                         <div className={"contact-btn"}>
-                            <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('connect')}>
+                            <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('contact')}>
                                 <SpotlightButton />
                             </Nav.Link>
                         </div>

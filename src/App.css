@@ -4,22 +4,6 @@
 
 /*Custom Fonts*/
 @font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Bold.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Medium.ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Book.ttf");
-  font-weight: 400;
-}
-
-@font-face {
   font-family: Graduate;
   src: url("./assets/font/Graduate-Regular.ttf");
   font-weight: 400;
@@ -48,7 +32,6 @@
 /*Setting all the elements on the top for the default*/
 *{
   margin:0;
-  padding:0;
   box-sizing: border-box;
 }
 
@@ -72,23 +55,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-family: Truculenta, sans-serif !important;
-  font-size:56px !important;
+  font-family: Truculenta, sans-serif;
+  font-size:56px;
 }
 
 h4 {
-    font-family: Graduate, sans-serif !important;
+    font-family: Graduate, sans-serif;
     font-size: 24px;
 }
 
 p {
-  font-family: Truculenta, sans-serif !important;
+  font-family: Truculenta, sans-serif;
   font-size:32px;
 }
 
 span{
-  font-family: Truculenta, sans-serif !important;
+  font-family: Truculenta, sans-serif;
   font-size:20px;
+}
+
+input:placeholder-shown, textarea:placeholder-shown {
+  font-family: Truculenta, sans-serif;
 }
 
 /*Navbar CSS*/
@@ -103,20 +90,11 @@ nav.navbar {
   background-color: mistyrose;
 }
 
-
 nav.navbar.scrolled {
   padding: 0;
   background-color: #121212;
 }
 
-nav.navbar .navbar-nav .nav-link .navbar-link {
-  font-weight: 400;
-  color: #fff !important;
-  letter-spacing: 0.8px;
-  padding: 0.25px;
-  font-size: 18px;
-  opacity: 0.75;
-}
 
 .navbar-text {
   display: inline-flex;
@@ -127,32 +105,17 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   height:50px;
 }
 
-.social-icon {
-  display: inline-flex;
+.social-icons {
   margin-left: 14px;
 }
 
-.social-icon a {
+.social-icons a {
   width: 50px;
   height: 100%;
   display: inline-flex;
-  padding: 5px;
-  /*justify-content: center;*/
-  /*align-content: center;*/
 }
 
-.social-icon a:hover::before{
-  transform: scale(10);
-}
-
-.social-icon a img {
-  width:100%;
-
-}
-
-
-.social-icon a:hover img {
-  /*filter: brightness(0) saturate(100%) invert(50%) sepia(7%) saturate(98%) hue-rotate(346deg);*/
+.social-icons a:hover img {
   scale: 1.2;
   animation-name : jump;
   animation-iteration-count : infinite;
@@ -166,6 +129,13 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   to {transform: translateY(-20px);}
 }
 
+.githubIcon {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  margin-left: 14px;
+}
+
 .contact-btn{
   margin-left: 50px;
   width: 180px;
@@ -173,10 +143,7 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 
 /*Banner CSS*/
 .banner {
-  padding: 260px 0 100px 0;
-  max-height: 20%;
-  width: auto;
-  height: auto;
+  height: 500px;
   background-image: url("./assets/img/banner_background.svg");
   background-position:top center;
   background-size: cover;
@@ -186,11 +153,13 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
   font-family: Crafty, serif;
 }
 
-.motion-box{
-  max-width: 50%;
-
+.intro-box {
+  text-align: center;
+  padding: 100px 30px 0 0;
 
 }
+
+
 .ferris-wheel-intro {
   top: 40%;
   left: 80%;
@@ -250,26 +219,30 @@ nav.navbar .navbar-nav .nav-link .navbar-link {
 /*projects css*/
 .project{
   position: relative;
-  padding: 100px 0 100px 0;;
 }
 
 
 .proj-imgbox {
   border-radius: 40px;
   background-color: #023e8a;
-  padding: 2rem 0;
-  margin: 10px;
+  padding: 1rem 1rem;
+  margin: 20px;
 }
 
-.proj-tx h4, .proj-tx span {
+.proj-imgbox:hover {
+  background-color: midnightblue;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.proj-imgbox a {
+  text-decoration: none;
+}
+
+.proj-imgbox h4, .proj-imgbox span {
   color: #e9edc9;
 }
 
-.proj-tx a {
-  color: #e9edc9;
-  font-family: Truculenta, sans-serif !important;
-  font-size:20px;
-}
 
 .tab-box {
   width: 100px;

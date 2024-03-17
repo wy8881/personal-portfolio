@@ -48,6 +48,7 @@ export const Banner = () => {
         <section className={"banner"} id={"home"} >
                 <Row className={"justify-content-center"}>
                     <Col xs={6} md={6} xl={6} style={{maxWidth:"50%"}}>
+                        <div className={"intro-box"}>
                             <motion.h1
                                 initial={{x: -300, y: -80}}
                                 animate={{x: -100}}
@@ -70,7 +71,9 @@ export const Banner = () => {
                             >
                                 Welcome to my Portfolio
                             </motion.h1>
-                            <h1 style={{position: "relative", top: -80, right: "3em"}}>I am {text}</h1>
+                            <h1 className={"intro-msg"}>I am {text}</h1>
+                        </div>
+
 
                     </Col>
                     <Col xs={6} md={6} xl={6}>
