@@ -4,7 +4,6 @@ import insIcon from '../assets/img/ins_icon.svg'
 import linkedinIcon from '../assets/img/linkedin_icon.svg'
 import emailIcon from '../assets/img/email_icon.svg'
 import githubIcon from '../assets/img/github_icon.svg'
-import ticketIcon from '../assets/img/tickets_icon.svg'
 import logo from '../assets/img/logo_lion.svg'
 import {motion} from "framer-motion";
 
