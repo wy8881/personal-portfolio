@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.8759e04c.css",
-    "main.js": "/personal-portfolio/static/js/main.9d00539f.js",
+    "main.css": "/personal-portfolio/static/css/main.93efcadb.css",
+    "main.js": "/personal-portfolio/static/js/main.1069c649.js",
     "static/js/453.298f5782.chunk.js": "/personal-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner_background.svg": "/personal-portfolio/static/media/banner_background.da15df77ff25ce702d92.svg",
-    "static/media/logo_lion.svg": "/personal-portfolio/static/media/logo_lion.f48d382306f055b2f7347b5ba6804b0a.svg",
+    "static/media/logo_lion.svg": "/personal-portfolio/static/media/logo_lion.8fedee5c92f105bab28a8b9c2b8d0f11.svg",
     "static/media/Truculenta-Regular.ttf": "/personal-portfolio/static/media/Truculenta-Regular.3e5cd8bc4442bc544070.ttf",
     "static/media/CraftyGirls-Regular.ttf": "/personal-portfolio/static/media/CraftyGirls-Regular.b50a4ad2763ebb1a2c00.ttf",
     "static/media/BubblegumSans-Regular.ttf": "/personal-portfolio/static/media/BubblegumSans-Regular.4161a3f44e0184ea37fd.ttf",
@@ -30,12 +30,12 @@
     "static/media/angular.svg": "/personal-portfolio/static/media/angular.8e1597b4092220dfc8a1b427ea95ecf6.svg",
     "static/media/ins_icon.svg": "/personal-portfolio/static/media/ins_icon.53e88ec897534f2befd465a2477ec8e7.svg",
     "static/media/email_icon.svg": "/personal-portfolio/static/media/email_icon.0e0b609b58cdcdfd255c4410a5eb7df5.svg",
-    "main.8759e04c.css.map": "/personal-portfolio/static/css/main.8759e04c.css.map",
-    "main.9d00539f.js.map": "/personal-portfolio/static/js/main.9d00539f.js.map",
+    "main.93efcadb.css.map": "/personal-portfolio/static/css/main.93efcadb.css.map",
+    "main.1069c649.js.map": "/personal-portfolio/static/js/main.1069c649.js.map",
     "453.298f5782.chunk.js.map": "/personal-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8759e04c.css",
-    "static/js/main.9d00539f.js"
+    "static/css/main.93efcadb.css",
+    "static/js/main.1069c649.js"
   ]
 }
