@@ -50,24 +50,24 @@ export const Banner = () => {
                     <Col xs={6} md={6} xl={6} style={{maxWidth:"50%"}}>
                         <div className={"intro-box"}>
                             <motion.h1
-                                initial={{x: -300, y: -80}}
-                                animate={{x: -100}}
+                                initial={{x: -300}}
+                                animate={{x: -110}}
                                 transition={{
                                     duration: 2,
                                     delay: 0.2
                                 }}
-                                whileHover={{scale: 1.2, opacity: 0.4}}
+                                whileHover={{scale: 1.1, opacity: 0.4}}
                             >
                                 Hi I'm Yi
                             </motion.h1>
                             <motion.h1
-                                initial={{x: -300, y: -80}}
-                                animate={{x: -100}}
+                                initial={{x: -300}}
+                                animate={{x: -110}}
                                 transition={{
                                     duration: 2,
                                     delay: 0.2
                                 }}
-                                whileHover={{scale: 1.2, opacity: 0.4}}
+                                whileHover={{scale: 1.1, opacity: 0.4}}
                             >
                                 Welcome to my Portfolio
                             </motion.h1>

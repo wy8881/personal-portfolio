@@ -159,7 +159,7 @@ nav.navbar.scrolled {
 }
 
 .intro-msg {
-  padding-right: 30px;
+  padding-right: 20%;
 }
 
 
@@ -186,7 +186,7 @@ nav.navbar.scrolled {
 /*Skills CSS*/
 .skills{
   background-color: transparent;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 50px 0;
   position: relative;
 
 }
@@ -221,6 +221,7 @@ nav.navbar.scrolled {
 
 /*projects css*/
 .project{
+  padding: 50px 0 50px 0;
   position: relative;
 }
 
@@ -268,6 +269,7 @@ nav.navbar.scrolled {
   border-radius: 50px;
   background-color: #f6bd60;
 }
+
 /*Cursor*/
 .circle {
   height: 32px;
