@@ -1,6 +1,9 @@
 import {Col, Container, Row, Tab, Nav} from "react-bootstrap";
 import {ProjectCard} from "./ProjectCard";
+import {useState} from "react";
+
 export const Projects = () => {
+    const [activeTab, setActiveTab] = useState("first");
     const projects = [
         {
             title: "Project 1",
@@ -29,48 +32,38 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus voluptates. Adipisci culpa nemo repudiandae!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum
+                            modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus
+                            voluptates. Adipisci culpa nemo repudiandae!</p>
                     </Col>
                 </Row>
-                <Tab.Container id="project-tabs" defaultActiveKey="first">
-                    <Row>
-                        <Col sm={12}>
-                            <Nav variant="pills" className="justify-content-center">
-                                <Nav.Item className={"tab-box"}>
-                                    <Nav.Link eventKey="first" >Tab 1</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className={"tab-box"}>
-                                    <Nav.Link eventKey="second" >Tab 2</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                        </Col>
-
-                    </Row>
-                    <Row>
-                        <Col sm={12}>
-                            <Tab.Content>
-                                <Tab.Pane eventKey="first">
-                                    <Row>
-                                        {
-                                            projects.map((project, index) => {
-                                                return(
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-
-                                                )
-                                            })
-                                        }
-                                    </Row>
-
-                                </Tab.Pane>
-                                <Tab.Pane eventKey="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis deserunt dicta eius exercitationem, fugiat illum in itaque iusto, laborum molestias praesentium quam quia ratione reiciendis rem repudiandae veritatis voluptate.</Tab.Pane>
-                                <Tab.Pane eventKey="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi, dolor eius eligendi ex expedita iure maxime nam nisi non optio quae, quis quisquam ratione rerum totam velit voluptas voluptate!</Tab.Pane>
-                            </Tab.Content>
-                        </Col>
-                    </Row>
-                </Tab.Container>
+                <div id ="tab-button" className="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button"
+                            className={`btn btn-outline-primary ${activeTab === 'first' ? 'active': ''}`}
+                            onClick={() => setActiveTab('first')}><span>Tab 1</span></button>
+                    <button type="button"
+                            className={`btn btn-outline-primary  ${activeTab === 'second' ? 'active': ''}`}
+                            onClick={() => setActiveTab('second')}><span>Tab 2</span></button>
+                </div>
+                <div id="tab-content">
+                    {
+                        activeTab === 'first' ?
+                            <Row>
+                                {
+                                    projects.map((project, index) => {
+                                        return(
+                                            <ProjectCard
+                                                key={index}
+                                                {...project}
+                                            />
+                                        )
+                                    })
+                                }
+                            </Row>
+                            :
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis deserunt dicta eius exercitationem, fugiat illum in itaque iusto, laborum molestias praesentium quam quia ratione reiciendis rem repudiandae veritatis voluptate.</p>
+                    }
+                </div>
             </Container>
 
         </section>

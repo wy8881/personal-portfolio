@@ -69,7 +69,7 @@ export const Banner = () => {
                                 }}
                                 whileHover={{scale: 1.1, opacity: 0.4}}
                             >
-                                Welcome to my Portfolio
+                                Welcome to my Website
                             </motion.h1>
                             <h1 className={"intro-msg"}>I am {text}</h1>
                         </div>
