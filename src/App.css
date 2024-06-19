@@ -255,7 +255,7 @@ nav.navbar.scrolled {
 }
 
 .proj-imgbox h4, .proj-imgbox span {
-  color: #e9edc9;
+                                                                    color: #e9edc9;
 }
 
 
@@ -263,20 +263,7 @@ nav.navbar.scrolled {
   width: 100px;
 }
 
-/*contact me css*/
-.contact h2{
-  color: #bc4749;
-}
 
-
-.contactForm {
-  position: relative;
-  z-index: 2;
-  padding: 50px;
-  border: 1px solid #e5989b;
-  border-radius: 50px;
-  background-color: #f6bd60;
-}
 
 /*Cursor*/
 .circle {

@@ -6,19 +6,60 @@ import { FiSend } from "react-icons/fi";
 import key from "../config/apiKey.json";
 import {styled} from "styled-components";
 
+const ContactBoard = styled.section`
+    & form {
+        position: relative;
+        z-index: 2;
+        padding: 50px;
+        border: 1px solid #e5989b;
+        border-radius: 50px;
+        background-color: #f6bd60;
+    }
+    
+    & input, textarea{
+        padding: 0;
+        border-radius: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    @media (min-width: 576px) {
+        & h2 {
+            font-size: 1rem;
+        }
+
+        & input, textarea {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            font-size: 0.5rem;
+        }
+    }
+    
+    
+    @media (min-width: 768px) {
+        & h2 {
+            font-size: 2.5rem;
+        }
+
+        & input, textarea{
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+    }
+    
+
+    `
+
 const Input = styled.input`
-    padding: 0.5rem;
-    border-radius: 0.5rem;
     border: 1px solid ${({invalid}) => invalid ? "#F08983" : "transparent"};
     color: ${({invalid}) => invalid ? "white" : "black"};
     background-color: ${({invalid}) => invalid ? "#EDC8C6" : "white"};
 `
 const Textarea = styled.textarea`
-    border-radius: 0.5rem;
-    padding: 0.5rem;
     border: 1px solid ${({invalid}) => invalid ? "#F08983" : "transparent"};
     color: ${({invalid}) => invalid ? "white" : "black"};
-    background-color: ${({invalid}) => invalid ? "#EDC8C6" : "white"};`
+    background-color: ${({invalid}) => invalid ? "#EDC8C6" : "white"};
+`
 
 
 export const Contact = () => {
@@ -94,27 +135,27 @@ export const Contact = () => {
     };
 
     return (
-        <section className={"contact"} id={"contact"}>
+        <ContactBoard>
             <Container>
                 <Row>
                 </Row>
                 <Row className={"align-items-center"}>
-                    <Col md={5}>
+                    <Col md={5} className={"d-none d-md-block"}>
                         <img src={connectBackground} alt="connect_background"/>
                     </Col>
                     <Col md={7}>
                         <h2>Contact Me!</h2>
-                        <form className={"contactForm"}>
+                        <form >
                             <Row>
-                                <Col className={"px-1"}>
+                                <Col    >
                                     <Input type="text" value={formDetails.firstName} placeholder="First Name"
                                            onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
                                 </Col>
-                                <Col className={"px-1"}>
+                                <Col >
                                     <Input type="text" value={formDetails.lastName} placeholder="Last Name"
                                            onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                                 </Col>
-                                <Col className={"px-1"}>
+                                <Col>
                                     <Input type="email"
                                            invalid={submitted && emailInvalid}
                                            value={formDetails.email}
@@ -147,6 +188,6 @@ export const Contact = () => {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </ContactBoard>
     )
 }

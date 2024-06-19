@@ -44,7 +44,7 @@ export const Skills = () =>{
                     <Col>
                         <Col className="skill-box">
                             <h2>Skills</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi architecto, dolor doloremque est officia rem temporibus. Consequuntur dignissimos dolorum facere magnam molestias neque possimus repellendus rerum! Harum, officiis.</p>
+                            <p>I'm passionate about coding and possess skills in both front-end and back-end development!</p>
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
                                 <Container className="skills-slide">
                                     <Row className={"align-items-center"}>

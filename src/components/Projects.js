@@ -6,24 +6,14 @@ export const Projects = () => {
     const [activeTab, setActiveTab] = useState("first");
     const projects = [
         {
-            title: "Project 1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus voluptates. Adipisci culpa nemo repudiandae!",
-            link: "https://www.google.com",
+            title: "Recipe Book",
+            description: "A recipe app made by Angular. Users can add, edit, delete recipes and ingredients. The app also has a shopping list feature.",
+            link: "https://wy8881.github.io/RecipeBook/recipes",
         },
         {
-            title: "Project 1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus voluptates. Adipisci culpa nemo repudiandae!",
-            link: "projImg1",
-        },
-        {
-            title: "Project 1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus voluptates. Adipisci culpa nemo repudiandae!",
-            link: "projImg1",
-        },
-        {
-            title: "Project 1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus voluptates. Adipisci culpa nemo repudiandae!",
-            link: "projImg1",
+            title: "Tic Tac Toe Game",
+            description: "An engaging Tic-Tac-Toe game built using React. This game allows two players to compete against each other by taking turns to mark their symbols (X or O) in a 3x3 grid. The game automatically determines the winner or declares a draw when all the cells are filled without any player winning.",
+            link: "https://wy8881.github.io/tic-tac-toe-game/",
         },
     ]
     return(
@@ -32,18 +22,16 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda, dolorum est eum illum
-                            modi pariatur perferendis porro quaerat quasi quo rem repudiandae sunt temporibus
-                            voluptates. Adipisci culpa nemo repudiandae!</p>
+                        <p>I have built several projects as part of my studies. Check them out below!</p>
                     </Col>
                 </Row>
                 <div id ="tab-button" className="btn-group" role="group" aria-label="Basic outlined example">
-                    <button type="button"
-                            className={`btn btn-outline-primary ${activeTab === 'first' ? 'active': ''}`}
-                            onClick={() => setActiveTab('first')}><span>Tab 1</span></button>
-                    <button type="button"
-                            className={`btn btn-outline-primary  ${activeTab === 'second' ? 'active': ''}`}
-                            onClick={() => setActiveTab('second')}><span>Tab 2</span></button>
+                    {/*<button type="button"*/}
+                    {/*        className={`btn btn-outline-primary ${activeTab === 'first' ? 'active': ''}`}*/}
+                    {/*        onClick={() => setActiveTab('first')}><span>Tab 1</span></button>*/}
+                    {/*<button type="button"*/}
+                    {/*        className={`btn btn-outline-primary  ${activeTab === 'second' ? 'active': ''}`}*/}
+                    {/*        onClick={() => setActiveTab('second')}><span>Tab 2</span></button>*/}
                 </div>
                 <div id="tab-content">
                     {
