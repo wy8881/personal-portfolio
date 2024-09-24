@@ -48,31 +48,14 @@ body{
   color: rebeccapurple !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body h1, h2, h3, h4, h5, h6, p, span {
   margin: 0;
   padding: 0;
   line-height: normal;
-}
-
-h2 {
   font-family: Truculenta, sans-serif;
-  font-size:56px;
 }
 
-h4 {
-    font-family: Graduate, sans-serif;
-    font-size: 24px;
-}
 
-p {
-  font-family: Truculenta, sans-serif;
-  font-size:32px;
-}
-
-span{
-  font-family: Truculenta, sans-serif;
-  font-size:20px;
-}
 
 input:placeholder-shown, textarea:placeholder-shown {
   font-family: Truculenta, sans-serif;
@@ -80,11 +63,10 @@ input:placeholder-shown, textarea:placeholder-shown {
 
 /*Navbar CSS*/
 nav.navbar {
-  padding: 18px 0;
+  padding: 1rem 0;
   position: sticky;
   width: 100%;
   top: 0;
-  /*Want this nav bar always be visible*/
   z-index: 9999;
   transition: ease-in-out;
   background-color: mistyrose;
@@ -101,16 +83,16 @@ nav.navbar.scrolled {
 }
 
 .navbar-icon {
-  width:50px;
-  height:50px;
+  width:2rem;
+  height:2rem;
 }
 
 .social-icons {
-  margin-left: 14px;
+  margin-left: 1rem;
 }
 
 .social-icons a {
-  width: 50px;
+  width: 3rem;
   height: 100%;
   display: inline-flex;
 }
@@ -143,10 +125,11 @@ nav.navbar.scrolled {
 
 /*Banner CSS*/
 .banner {
-  height: 500px;
-  background-image: url("./assets/img/banner_background.svg");
+  height: 25rem;
+  background-image: url("./assets/img/banner_backgroud_1.jpg");
   background-position:top center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .banner h1{
@@ -156,7 +139,16 @@ nav.navbar.scrolled {
 
 .intro-box {
   text-align: center;
-  padding: 100px 30px 0 0;
+  padding: 5rem 1rem 0 0;
+}
+
+@media (max-width: 1100px) {
+  .banner{
+   display: none;
+  }
+  .intro-box {
+    display: none;
+  }
 }
 
 .intro-msg {
@@ -192,26 +184,22 @@ nav.navbar.scrolled {
 
 }
 
-.skill_image{
-    /*height: fit-content;*/
-    /*width: fit-content;*/
-    max-width: 80px;
-    max-height: 80px;
-    margin: 20px;
-
+.skill_image {
+  width: 3rem;
 }
+
 
 .skills-slide {
   background-color: rosybrown;
-  border-radius: 100px;
-  margin: 20px;
+  border-radius: 10rem;
+  padding: 1rem;
+  margin: 1rem;
 
 }
 
-.skills-slide h5{
-  font-family: Truculenta, sans-serif;
+.skills-slide h4{
   color: white;
-  font-size: 36px;
+  padding: 1rem;
 }
 
 .skill-item {
@@ -238,10 +226,10 @@ nav.navbar.scrolled {
 }
 
 .proj-imgbox {
-  border-radius: 40px;
+  border-radius: 2rem;
   background-color: #023e8a;
   padding: 1rem 1rem;
-  margin: 20px;
+  margin: 1rem;
 }
 
 .proj-imgbox:hover {
@@ -255,7 +243,7 @@ nav.navbar.scrolled {
 }
 
 .proj-imgbox h4, .proj-imgbox span {
-                                                                    color: #e9edc9;
+  color: #e9edc9;
 }
 
 

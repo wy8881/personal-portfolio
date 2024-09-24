@@ -4,7 +4,7 @@ import connectBackground from "../assets/img/connect_background.svg";
 import emailjs from '@emailjs/browser';
 import { FiSend } from "react-icons/fi";
 import key from "../config/apiKey.json";
-import {styled} from "styled-components";
+    import {styled} from "styled-components";
 
 const ContactBoard = styled.section`
     & form {
@@ -12,41 +12,17 @@ const ContactBoard = styled.section`
         z-index: 2;
         padding: 50px;
         border: 1px solid #e5989b;
-        border-radius: 50px;
+        border-radius:  1rem;
         background-color: #f6bd60;
     }
     
     & input, textarea{
         padding: 0;
+        margin:1rem;
         border-radius: 0.5rem;
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
-    @media (min-width: 576px) {
-        & h2 {
-            font-size: 1rem;
-        }
-
-        & input, textarea {
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            font-size: 0.5rem;
-        }
-    }
-    
-    
-    @media (min-width: 768px) {
-        & h2 {
-            font-size: 2.5rem;
-        }
-
-        & input, textarea{
-            padding: 1rem;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-        }
-    }
-    
 
     `
 
@@ -135,19 +111,19 @@ export const Contact = () => {
     };
 
     return (
-        <ContactBoard>
+        <ContactBoard id={'contact'}>
             <Container>
                 <Row>
                 </Row>
                 <Row className={"align-items-center"}>
-                    <Col md={5} className={"d-none d-md-block"}>
+                    <Col md={4} className={"d-none d-md-block"}>
                         <img src={connectBackground} alt="connect_background"/>
                     </Col>
-                    <Col md={7}>
+                    <Col md={8}>
                         <h2>Contact Me!</h2>
                         <form >
-                            <Row>
-                                <Col    >
+                            <Row >
+                                <Col >
                                     <Input type="text" value={formDetails.firstName} placeholder="First Name"
                                            onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
                                 </Col>
@@ -155,7 +131,7 @@ export const Contact = () => {
                                     <Input type="text" value={formDetails.lastName} placeholder="Last Name"
                                            onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                                 </Col>
-                                <Col>
+                                <Col >
                                     <Input type="email"
                                            invalid={submitted && emailInvalid}
                                            value={formDetails.email}

@@ -21,8 +21,8 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>I have built several projects as part of my studies. Check them out below!</p>
+                        <h1>Projects</h1>
+                        <h3>I have built several projects as part of my studies. Check them out below!</h3>
                     </Col>
                 </Row>
                 <div id ="tab-button" className="btn-group" role="group" aria-label="Basic outlined example">
