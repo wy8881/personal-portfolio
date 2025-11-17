@@ -1,10 +1,9 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import connectBackground from "../assets/img/connect_background.svg";
 import emailjs from '@emailjs/browser';
 import { FiSend } from "react-icons/fi";
-import key from "../config/apiKey.json";
-    import {styled} from "styled-components";
+import {styled} from "styled-components";
 
 const ContactBoard = styled.section`
     & form {
@@ -30,11 +29,17 @@ const Input = styled.input`
     border: 1px solid ${({invalid}) => invalid ? "#F08983" : "transparent"};
     color: ${({invalid}) => invalid ? "white" : "black"};
     background-color: ${({invalid}) => invalid ? "#EDC8C6" : "white"};
+    opacity: ${({disabled}) => disabled ? 0.6 : 1};
+    cursor: ${({disabled}) => disabled ? "not-allowed" : "text"};
+    pointer-events: ${({disabled}) => disabled ? "none" : "auto"};
 `
 const Textarea = styled.textarea`
     border: 1px solid ${({invalid}) => invalid ? "#F08983" : "transparent"};
     color: ${({invalid}) => invalid ? "white" : "black"};
     background-color: ${({invalid}) => invalid ? "#EDC8C6" : "white"};
+    opacity: ${({disabled}) => disabled ? 0.6 : 1};
+    cursor: ${({disabled}) => disabled ? "not-allowed" : "text"};
+    pointer-events: ${({disabled}) => disabled ? "none" : "auto"};
 `
 
 
@@ -46,16 +51,31 @@ export const Contact = () => {
         message: ""
     }
 
-
-
-    emailjs.init({
-        publicKey: key.PUBLIC_KEY
-    })
-
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [btnText, setBtnText] = useState("Send");
     const [status, setStatus] = useState("");
     const [submitted, setSubmitted] = useState(false);
+    const [apiKeyLoaded, setApiKeyLoaded] = useState(false);
+
+    // Conditionally load apiKey.json if it exists
+    useEffect(() => {
+        const loadApiKey = async () => {
+            try {
+                const key = await import("../config/apiKey.json");
+                if (key && key.PUBLIC_KEY) {
+                    emailjs.init({
+                        publicKey: key.PUBLIC_KEY
+                    });
+                    setApiKeyLoaded(true);
+                }
+            } catch (error) {
+                // File doesn't exist or failed to load
+                console.warn("apiKey.json not found or failed to load:", error);
+                setApiKeyLoaded(false);
+            }
+        };
+        loadApiKey();
+    }, []);
 
     const emailInvalid = formDetails.email === "" || !formDetails.email.includes("@") || !formDetails.email.includes(".");
     const messageInvalid = formDetails.message === "";
@@ -65,6 +85,10 @@ export const Contact = () => {
     }
 
     const handleSubmit = () => {
+        if (!apiKeyLoaded) {
+            return;
+        }
+
         setStatus("sending")
         setBtnText("Sending...");
         setSubmitted(true);
@@ -84,13 +108,13 @@ export const Contact = () => {
                     setStatus("failed");
                 });
         }
-
     }
 
     const NeumorphismButton = () => {
         return (
             <button
                 type={"button"}
+                disabled={!apiKeyLoaded}
                 className={`
                     px-4 py-2 rounded-full 
                     flex items-center gap-2 
@@ -98,9 +122,7 @@ export const Contact = () => {
                     shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
                     
                     transition-all
-            
-                    hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
-                    hover:text-violet-500
+                    ${!apiKeyLoaded ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)] hover:text-violet-500'}
                 `}
                 onClick={handleSubmit}
             >
@@ -121,32 +143,62 @@ export const Contact = () => {
                     </Col>
                     <Col md={8}>
                         <h2>Contact Me!</h2>
+                        {!apiKeyLoaded && (
+                            <div style={{
+                                padding: "20px",
+                                marginBottom: "20px",
+                                backgroundColor: "#ffebee",
+                                border: "1px solid #f44336",
+                                borderRadius: "0.5rem",
+                                color: "#c62828"
+                            }}>
+                                <p style={{margin: 0, fontWeight: "bold"}}>
+                                    Sorry. Email service is not available at the moment. Please find me via LinkedIn or GitHub.
+                                </p>
+                            </div>
+                        )}
                         <form >
                             <Row >
                                 <Col >
-                                    <Input type="text" value={formDetails.firstName} placeholder="First Name"
-                                           onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
+                                    <Input 
+                                        type="text" 
+                                        value={formDetails.firstName} 
+                                        placeholder="First Name"
+                                        disabled={!apiKeyLoaded}
+                                        onChange={(e) => onFormUpdate('firstName', e.target.value)}
+                                    />
                                 </Col>
                                 <Col >
-                                    <Input type="text" value={formDetails.lastName} placeholder="Last Name"
-                                           onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                                    <Input 
+                                        type="text" 
+                                        value={formDetails.lastName} 
+                                        placeholder="Last Name"
+                                        disabled={!apiKeyLoaded}
+                                        onChange={(e) => onFormUpdate('lastName', e.target.value)}
+                                    />
                                 </Col>
                                 <Col >
-                                    <Input type="email"
-                                           invalid={submitted && emailInvalid}
-                                           value={formDetails.email}
-                                           placeholder="Email"
-                                           onChange={(e) => onFormUpdate('email', e.target.value)}/>
+                                    <Input 
+                                        type="email"
+                                        invalid={submitted && emailInvalid}
+                                        value={formDetails.email}
+                                        placeholder="Email"
+                                        disabled={!apiKeyLoaded}
+                                        onChange={(e) => onFormUpdate('email', e.target.value)}
+                                    />
                                 </Col>
                             </Row>
                             <Row style={{paddingTop: "1rem"}}>
                                 <Col>
-                                    <Textarea rows="6" style={{width: "100%"}}
-                                              invalid={submitted && messageInvalid}
-                                              value={formDetails.message}
-                                              placeholder="Message"
-                                              onChange={(e) => onFormUpdate('message', e.target.value)}></Textarea>
-
+                                    <Textarea 
+                                        rows="6" 
+                                        style={{width: "100%"}}
+                                        invalid={submitted && messageInvalid}
+                                        value={formDetails.message}
+                                        placeholder="Message"
+                                        disabled={!apiKeyLoaded}
+                                        onChange={(e) => onFormUpdate('message', e.target.value)}
+                                    />
                                 </Col>
                             </Row>
                             <div className=" flex items-center justify-center">
