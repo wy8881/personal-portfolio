@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.675fa41f.css",
-    "main.js": "/personal-portfolio/static/js/main.cf6c334b.js",
+    "main.css": "/personal-portfolio/static/css/main.a77e6b48.css",
+    "main.js": "/personal-portfolio/static/js/main.350c2a64.js",
     "static/js/453.b21437c2.chunk.js": "/personal-portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/logo_lion.svg": "/personal-portfolio/static/media/logo_lion.8fedee5c92f105bab28a8b9c2b8d0f11.svg",
     "static/media/Truculenta-Regular.ttf": "/personal-portfolio/static/media/Truculenta-Regular.3e5cd8bc4442bc544070.ttf",
@@ -29,12 +29,12 @@
     "static/media/angular.svg": "/personal-portfolio/static/media/angular.8e1597b4092220dfc8a1b427ea95ecf6.svg",
     "static/media/ins_icon.svg": "/personal-portfolio/static/media/ins_icon.53e88ec897534f2befd465a2477ec8e7.svg",
     "static/media/email_icon.svg": "/personal-portfolio/static/media/email_icon.0e0b609b58cdcdfd255c4410a5eb7df5.svg",
-    "main.675fa41f.css.map": "/personal-portfolio/static/css/main.675fa41f.css.map",
-    "main.cf6c334b.js.map": "/personal-portfolio/static/js/main.cf6c334b.js.map",
+    "main.a77e6b48.css.map": "/personal-portfolio/static/css/main.a77e6b48.css.map",
+    "main.350c2a64.js.map": "/personal-portfolio/static/js/main.350c2a64.js.map",
     "453.b21437c2.chunk.js.map": "/personal-portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.675fa41f.css",
-    "static/js/main.cf6c334b.js"
+    "static/css/main.a77e6b48.css",
+    "static/js/main.350c2a64.js"
   ]
 }
