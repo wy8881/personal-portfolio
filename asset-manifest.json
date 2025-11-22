@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.252bd274.css",
-    "main.js": "/personal-portfolio/static/js/main.6fd3cc4a.js",
+    "main.css": "/personal-portfolio/static/css/main.41d1c823.css",
+    "main.js": "/personal-portfolio/static/js/main.566a6b8f.js",
     "static/js/453.b21437c2.chunk.js": "/personal-portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/logo_lion.svg": "/personal-portfolio/static/media/logo_lion.8fedee5c92f105bab28a8b9c2b8d0f11.svg",
     "static/media/banner_backgroud_1.png": "/personal-portfolio/static/media/banner_backgroud_1.10c328750be5e5220ae2.png",
+    "static/media/bootstrap-icons.woff?": "/personal-portfolio/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/Truculenta-Regular.ttf": "/personal-portfolio/static/media/Truculenta-Regular.3e5cd8bc4442bc544070.ttf",
+    "static/media/bootstrap-icons.woff2?": "/personal-portfolio/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/CraftyGirls-Regular.ttf": "/personal-portfolio/static/media/CraftyGirls-Regular.b50a4ad2763ebb1a2c00.ttf",
     "static/media/BubblegumSans-Regular.ttf": "/personal-portfolio/static/media/BubblegumSans-Regular.4161a3f44e0184ea37fd.ttf",
     "static/media/junit5.png": "/personal-portfolio/static/media/junit5.a064065d06e7833dd89f.png",
@@ -22,17 +24,15 @@
     "static/media/python.svg": "/personal-portfolio/static/media/python.34ed02aa0d1dcb192508fbe1868770b9.svg",
     "static/media/typescript.svg": "/personal-portfolio/static/media/typescript.0553733a9d433cefaf9e04ffcde0eb7a.svg",
     "static/media/java.svg": "/personal-portfolio/static/media/java.66e2b4ef777ab6d2341d.svg",
-    "static/media/github_icon.svg": "/personal-portfolio/static/media/github_icon.2364ab86ce37859f233e45f32fcd2f0e.svg",
-    "static/media/linkedin_icon.svg": "/personal-portfolio/static/media/linkedin_icon.1dd51a07bd7327708e5249c5f9025b97.svg",
     "index.html": "/personal-portfolio/index.html",
     "static/media/springboot.svg": "/personal-portfolio/static/media/springboot.06648761f888d95c060a68377ffd04e8.svg",
     "static/media/angular.svg": "/personal-portfolio/static/media/angular.8e1597b4092220dfc8a1b427ea95ecf6.svg",
-    "main.252bd274.css.map": "/personal-portfolio/static/css/main.252bd274.css.map",
-    "main.6fd3cc4a.js.map": "/personal-portfolio/static/js/main.6fd3cc4a.js.map",
+    "main.41d1c823.css.map": "/personal-portfolio/static/css/main.41d1c823.css.map",
+    "main.566a6b8f.js.map": "/personal-portfolio/static/js/main.566a6b8f.js.map",
     "453.b21437c2.chunk.js.map": "/personal-portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.252bd274.css",
-    "static/js/main.6fd3cc4a.js"
+    "static/css/main.41d1c823.css",
+    "static/js/main.566a6b8f.js"
   ]
 }
