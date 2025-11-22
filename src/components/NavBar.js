@@ -1,7 +1,6 @@
 import {useState, useEffect, useRef} from "react";
 import {Navbar, Container, Nav} from "react-bootstrap"
-import linkedinIcon from '../assets/img/linkedin_icon.svg'
-import githubIcon from '../assets/img/github_icon.svg'
+// import { Github, LinkedinBox, Wordpress } from "react-bootstrap-icons";
 import logo from '../assets/img/logo_lion.svg'
 import {motion} from "framer-motion";
 
@@ -95,10 +94,13 @@ export const NavBar = () => {
                     <span className="navbar-text">
                         <div className={"social-icons"}>
                             <Nav.Link href="https://github.com/wy8881" target="_blank" rel="noopener noreferrer">
-                                <img src={githubIcon} alt="githubIcon" className="social-icon-img"/>
+                                <i className="bi bi-github social-icon-img"></i>                            
                             </Nav.Link>
                             <Nav.Link href="https://www.linkedin.com/in/yi-wang-meow99" target="_blank" rel="noopener noreferrer">
-                                <img src={linkedinIcon} alt="linkedinIcon" className="social-icon-img"/>
+                                <i className="bi bi-linkedin social-icon-img"></i>
+                            </Nav.Link>
+                            <Nav.Link href="https://gravatar.com/wy7382" target="_blank" rel="noopener noreferrer">
+                                <i className="bi bi-wordpress social-icon-img"></i>
                             </Nav.Link>
                         </div>
                         <div className={"contact-btn"}>
@@ -112,4 +114,3 @@ export const NavBar = () => {
         </Navbar>
     )
 }
-

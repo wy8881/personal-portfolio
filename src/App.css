@@ -74,7 +74,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0;
-  background-color: #121212;
+  background-color: mistyrose;
 }
 
 
@@ -107,9 +107,13 @@ nav.navbar.scrolled {
   width: 2.5rem;
   height: 2.5rem;
   object-fit: contain;
+  font-size: 2.5rem;
+  display: inline-block;
 }
 
-.social-icons .nav-link:hover img {
+.social-icons .nav-link:hover img,
+.social-icons .nav-link:hover svg,
+.social-icons .nav-link:hover i {
   scale: 1.2;
   animation-name : jump;
   animation-iteration-count : infinite;
