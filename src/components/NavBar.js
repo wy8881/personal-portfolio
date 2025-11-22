@@ -87,28 +87,40 @@ export const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        {/*<Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>*/}
-                        <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <Nav.Item>
+                            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        </Nav.Item>
                     </Nav>
-                    <span className="navbar-text">
-                        <div className={"social-icons"}>
+                    <Nav className="social-icons">
+                        <Nav.Item>
                             <Nav.Link href="https://github.com/wy8881" target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-github social-icon-img"></i>                            
                             </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
                             <Nav.Link href="https://www.linkedin.com/in/yi-wang-meow99" target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-linkedin social-icon-img"></i>
                             </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
                             <Nav.Link href="https://gravatar.com/wy7382" target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-wordpress social-icon-img"></i>
                             </Nav.Link>
-                        </div>
-                        <div className={"contact-btn"}>
+                        </Nav.Item>
+                    </Nav>
+                    <Nav className="contact-btn">
+                        <Nav.Item>
                             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('contact')}>
                                 <SpotlightButton />
                             </Nav.Link>
-                        </div>
-                    </span>
+                        </Nav.Item>
+                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

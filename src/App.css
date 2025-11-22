@@ -68,18 +68,21 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: mistyrose;
 }
 
 nav.navbar.scrolled {
   padding: 0;
-  background-color: mistyrose;
+  background-color: rgba(255, 228, 225, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 
 .navbar-text {
   display: inline-flex;
+  align-items: center;
 }
 
 .navbar-icon {
@@ -106,9 +109,10 @@ nav.navbar.scrolled {
 .social-icon-img {
   width: 2.5rem;
   height: 2.5rem;
-  object-fit: contain;
   font-size: 2.5rem;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 .social-icons .nav-link:hover img,
@@ -129,7 +133,12 @@ nav.navbar.scrolled {
 
 
 .contact-btn{
-  margin-left: 50px;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-btn .nav-item {
   width: 180px;
 }
 
