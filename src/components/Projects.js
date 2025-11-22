@@ -1,9 +1,9 @@
-import {Col, Container, Row, Tab, Nav} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import {ProjectCard} from "./ProjectCard";
 import {useState} from "react";
 
 export const Projects = () => {
-    const [activeTab, setActiveTab] = useState("first");
+    const [activeTab] = useState("first");
     const projects = [
         {
             title: "Recipe Book",

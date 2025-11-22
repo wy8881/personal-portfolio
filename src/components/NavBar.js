@@ -1,8 +1,6 @@
 import {useState, useEffect, useRef} from "react";
 import {Navbar, Container, Nav} from "react-bootstrap"
-import insIcon from '../assets/img/ins_icon.svg'
 import linkedinIcon from '../assets/img/linkedin_icon.svg'
-import emailIcon from '../assets/img/email_icon.svg'
 import githubIcon from '../assets/img/github_icon.svg'
 import logo from '../assets/img/logo_lion.svg'
 import {motion} from "framer-motion";
@@ -13,17 +11,16 @@ export const NavBar = () => {
 
     useEffect(() => {
         const onScroll = () => {
-            if (window.srollY > 50) {
+            if (window.scrollY > 50) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
             }
+        };
 
-            window.addEventListener("scroll", onScroll);
-
-            return () => window.removeEventListener("scroll", onScroll)
-        }
-    })
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
@@ -64,13 +61,13 @@ export const NavBar = () => {
 
         return (
             <motion.button
-                whileTap={{ scale: 0.985 }}
+                whileTap={{ scale: 0.9}}
                 ref={btnRef}
                 className="relative w-full max-w-xs overflow-hidden rounded-full bg-black px-4 py-3 text-lg font-medium text-white"
             >
-      <span className="pointer-events-none relative z-10 mix-blend-difference">
-        Contact Me
-      </span>
+                <span className="pointer-events-none relative z-10 mix-blend-difference">
+                    Contact Me
+                </span>
                 <span
                     ref={spanRef}
                     className="pointer-events-none absolute left-[50%] top-[50%] h-32 w-32 -translate-x-[50%] -translate-y-[50%] rounded-full bg-slate-100"
@@ -97,16 +94,18 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className={"social-icons"}>
-                            <a href="https://github.com/wy8881"><img src={githubIcon} alt="githubIcon" style={{padding:"5px"}}/></a>
-                            <a href="#" style={{display:"none"}}><img src={insIcon} alt=""/></a>
-                            <a href="https://www.linkedin.com/in/yi-wang-meow99"><img src={linkedinIcon} alt="linkedinIcon" /></a>
+                            <Nav.Link href="https://github.com/wy8881" target="_blank" rel="noopener noreferrer">
+                                <img src={githubIcon} alt="githubIcon" className="social-icon-img"/>
+                            </Nav.Link>
+                            <Nav.Link href="https://www.linkedin.com/in/yi-wang-meow99" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedinIcon} alt="linkedinIcon" className="social-icon-img"/>
+                            </Nav.Link>
                         </div>
                         <div className={"contact-btn"}>
                             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink('contact')}>
                                 <SpotlightButton />
                             </Nav.Link>
                         </div>
-
                     </span>
                 </Navbar.Collapse>
             </Container>

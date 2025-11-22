@@ -1,7 +1,6 @@
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import {Col, Container, Row} from "react-bootstrap";
-import javaIcon from "../assets/img/tech_icon/java.svg";
 import jupyterIcon from "../assets/img/tech_icon/jupyter.svg";
 import mongodbIcon from "../assets/img/tech_icon/mongodb.svg";
 import pythonIcon from "../assets/img/tech_icon/python.svg";

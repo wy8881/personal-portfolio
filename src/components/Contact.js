@@ -69,8 +69,6 @@ export const Contact = () => {
                     setApiKeyLoaded(true);
                 }
             } catch (error) {
-                // File doesn't exist or failed to load
-                console.warn("apiKey.json not found or failed to load:", error);
                 setApiKeyLoaded(false);
             }
         };

@@ -1,6 +1,5 @@
 import {Col, Row} from "react-bootstrap";
 import {motion} from "framer-motion";
-import {FerrisWheel} from "./FerrisWheel";
 import {useEffect, useState, useCallback, useMemo} from "react";
 
 const ANIMATION_CONFIG = {
@@ -92,8 +91,8 @@ export const Banner = () => {
 
     return (
         <section className="banner" id="home">
-            <Row className="justify-content-center">
-                <Col xs={6} md={6} xl={6} style={{ maxWidth: "50%" }}>
+            <Row className="justify-content-start">
+                <Col xs={12} md={6} xl={6}>
                     <div className="intro-box">
                         <motion.h1 {...headingAnimationProps}>
                             Hi I'm Yi
@@ -103,9 +102,6 @@ export const Banner = () => {
                         </motion.h1>
                         <h1 className="intro-msg">I am {text}</h1>
                     </div>
-                </Col>
-                <Col xs={6} md={6} xl={6}>
-                    <FerrisWheel />
                 </Col>
             </Row>
         </section>
