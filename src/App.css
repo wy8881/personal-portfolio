@@ -93,9 +93,7 @@ nav.navbar.scrolled {
   display: inline-block;
 }
 
-/* Make LinkedIn and WordPress icons darker to match GitHub icon */
-.social-icons .nav-link i.bi-linkedin,
-.social-icons .nav-link i.bi-wordpress {
+.social-icons .nav-link i {
   filter: brightness(0.3);
   color: #000;
 }
