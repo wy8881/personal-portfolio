@@ -259,11 +259,17 @@ nav.navbar.scrolled {
   background-color: transparent;
   padding: 50px 0 50px 0;
   position: relative;
-
+  z-index: 10;
 }
 
 .skill_image {
   width: 3rem;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill_image:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+  transform: scale(1.1);
 }
 
 
@@ -272,13 +278,50 @@ nav.navbar.scrolled {
   border-radius: 10rem;
   padding: 1rem;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  position: relative;
+  z-index: 20;
+}
 
+.skills-slide .row:not(:first-child) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.skills-group {
+  justify-content: center;
+}
+
+.skills-group .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.skills-group .col:first-child {
+  padding-left: 5rem;
+}
+
+.skills-group .col:last-child {
+  padding-right: 5rem;
+}
+
+.skills-group .col:only-child {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .skills-slide h4{
   color: white;
-  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 
 .skill-item {
   display: flex;

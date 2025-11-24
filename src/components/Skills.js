@@ -11,6 +11,7 @@ import springBootIcon from "../assets/img/tech_icon/springboot.svg";
 import intellijIcon from "../assets/img/tech_icon/intelliJ.svg";
 import typeScriptIcon from "../assets/img/tech_icon/typescript.svg";
 import angularIcon from "../assets/img/tech_icon/angular.svg";
+import wordpressIcon from "../assets/img/wordpress_icon.png";
 export const Skills = () =>{
 
 
@@ -44,22 +45,28 @@ export const Skills = () =>{
                             <h3>I'm passionate about coding and possess skills in both front-end and back-end development!</h3>
                             <Carousel responsive={responsive} infinite={true} className={"skill-slider"}>
                                 <Container className="skills-slide">
-                                    <Row xs={2} sm={3} md={4} lg={5} className="justify-content-center">
+                                    <Row className="text-center"><h4>Front End</h4></Row>
+                                    <Row xs={2} className="skills-group">
                                         <Col className="d-flex justify-content-center " >
                                             <img src={typeScriptIcon} alt="typescript" className="skill_image" />
                                         </Col>
                                         <Col className="d-flex justify-content-center">
                                             <img src={reactIcon} alt="react" className="skill_image" />
                                         </Col>
+                                    </Row>
+                                    <Row xs={2} className="skills-group">
                                         <Col className="d-flex justify-content-center">
                                             <img src={angularIcon} alt="angular" className="skill_image" />
                                         </Col>
+                                        <Col className="d-flex justify-content-center">
+                                            <img src={wordpressIcon} alt="wordpress" className="skill_image" />
+                                        </Col>
                                     </Row>
-                                    <Row className="text-center"><h4>Front End</h4></Row>
                                 </Container>
 
                                 <Container className="skills-slide">
-                                    <Row xs={2} sm={3} md={4} lg={5} className="justify-content-center">
+                                    <Row className="text-center"><h4>Back End</h4></Row>
+                                    <Row xs={2} className="skills-group">
                                         <Col className="d-flex justify-content-center">
                                             <img src={springBootIcon} alt="spring boot" className="skill_image" />
                                         </Col>
@@ -67,20 +74,20 @@ export const Skills = () =>{
                                             <img src={pythonIcon} alt="python" className="skill_image" />
                                         </Col>
                                     </Row>
-                                    <Row className="text-center"><h4>Back End</h4></Row>
                                 </Container>
 
                                 <Container className="skills-slide">
-                                    <Row xs={2} sm={3} md={4} lg={5} className="justify-content-center">
+                                    <Row className="text-center"><h4>Test</h4></Row>
+                                    <Row xs={2} className="skills-group">
                                         <Col className="d-flex justify-content-center">
                                             <img src={junitIcon} alt="junit5" className="skill_image" />
                                         </Col>
                                     </Row>
-                                    <Row className="text-center"><h4>Test</h4></Row>
                                 </Container>
 
                                 <Container className="skills-slide">
-                                    <Row xs={2} sm={3} md={4} lg={5} className="justify-content-center">
+                                    <Row className="text-center"><h4>Platform</h4></Row>
+                                    <Row xs={2} className="skills-group">
                                         <Col className="d-flex justify-content-center">
                                             <img src={intellijIcon} alt="intellij" className="skill_image" />
                                         </Col>
@@ -88,11 +95,11 @@ export const Skills = () =>{
                                             <img src={jupyterIcon} alt="jupyter" className="skill_image" />
                                         </Col>
                                     </Row>
-                                    <Row className="text-center"><h4>Platform</h4></Row>
                                 </Container>
 
                                 <Container className="skills-slide">
-                                    <Row xs={2} sm={3} md={4} lg={5} className="justify-content-center">
+                                    <Row className="text-center"><h4>Database</h4></Row>
+                                    <Row xs={2} className="skills-group">
                                         <Col className="d-flex justify-content-center">
                                             <img src={mongodbIcon} alt="mongodb" className="skill_image" />
                                         </Col>
@@ -100,7 +107,6 @@ export const Skills = () =>{
                                             <img src={mysqlIcon} alt="mysql" className="skill_image" />
                                         </Col>
                                     </Row>
-                                    <Row className="text-center"><h4>Database</h4></Row>
                                 </Container>
 
                             </Carousel>

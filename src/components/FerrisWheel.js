@@ -11,7 +11,8 @@ const TECH_ICONS = [
     "junit5.png",
     "intelliJ.svg",
     "angular.svg",
-    "typescript.svg"
+    "typescript.svg",
+    "wordpress_icon.png"
 ];
 
 const ANIMATION_CONFIG = {
@@ -67,7 +68,9 @@ export const FerrisWheel = () => {
                 >
                     <div className="intro-parent">
                         <img
-                            src={require(`../assets/img/tech_icon/${iconFilename}`)}
+                            src={iconFilename === "wordpress_icon.png" 
+                                ? require(`../assets/img/${iconFilename}`)
+                                : require(`../assets/img/tech_icon/${iconFilename}`)}
                             alt={`${getTechName(iconFilename)} technology icon`}
                             className="intro-img"
                         />
