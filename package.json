@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://wy8881.github.io/personal-portfolio",
+  "homepage": "https://portfolio.wyprojects.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
