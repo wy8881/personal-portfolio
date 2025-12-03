@@ -8,13 +8,20 @@ export const ProjectCard = ({title, description, link}) => {
         padding: 1rem 1rem;
         margin: 20px;
         height: 100%;
+        text-align: left;
         
         & a {
             text-decoration: none;
+            display: block;
         }
         
         & h4, span {
             color: #e9edc9;
+            text-align: left;
+        }
+        
+        & span {
+            display: block;
         }
         
         &:hover {

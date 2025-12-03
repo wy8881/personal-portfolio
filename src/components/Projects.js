@@ -6,6 +6,11 @@ export const Projects = () => {
     const [activeTab] = useState("first");
     const projects = [
         {
+            title: "E-Voting System",
+            description: "A secure online voting app built with React, Spring Boot, and MongoDB. Users can log in, view elections, and cast a single verified vote. Admin and Delegate roles manage the election lifecycle. Fully deployed with Vercel, Railway, Cloudflare, and custom domains.",
+            link: "https://voting.wyprojects.com/",
+        },
+        {
             title: "Recipe Book",
             description: "A recipe app made by Angular. Users can add, edit, delete recipes and ingredients. The app also has a shopping list feature.",
             link: "https://wy8881.github.io/RecipeBook/recipes",
